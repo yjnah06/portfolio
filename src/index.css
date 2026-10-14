@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  }
+}
+
+/* 듀오링고 시안 스타일 입체 컴포넌트 유틸리티 */
+.duo-card {
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+  border-radius: 1rem;
+}
+
+.duo-card-3d {
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+  border-bottom: 4px solid #e5e5e5;
+  border-radius: 1.25rem;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.duo-card-3d:hover {
+  transform: translateY(-2px);
+  border-color: #d1d5db;
+  border-bottom-color: #cbd5e1;
+}
+
+/* 듀오링고 스타일 3D 버튼 */
+.duo-btn-blue {
+  background-color: #1cb0f6;
+  color: #ffffff;
+  font-weight: 700;
+  border-radius: 1rem;
+  border-bottom: 4px solid #1899d6;
+  transition: all 0.15s ease-in-out;
+}
+.duo-btn-blue:hover {
+  background-color: #2ec5ff;
+}
+.duo-btn-blue:active {
+  border-bottom-width: 0px;
+  transform: translateY(4px);
+}
+
+.duo-btn-green {
+  background-color: #58cc02;
+  color: #ffffff;
+  font-weight: 700;
+  border-radius: 1rem;
+  border-bottom: 4px solid #46a302;
+  transition: all 0.15s ease-in-out;
+}
+.duo-btn-green:hover {
+  background-color: #61e002;
+}
+.duo-btn-green:active {
+  border-bottom-width: 0px;
+  transform: translateY(4px);
+}
+
+.duo-btn-white {
+  background-color: #ffffff;
+  color: #4b4b4b;
+  font-weight: 700;
+  border: 2px solid #e5e5e5;
+  border-bottom: 4px solid #e5e5e5;
+  border-radius: 1rem;
+  transition: all 0.15s ease-in-out;
+}
+.duo-btn-white:hover {
+  background-color: #f7f7f7;
+  border-color: #d1d5db;
+  border-bottom-color: #9ca3af;
+}
+.duo-btn-white:active {
+  border-bottom-width: 2px;
+  transform: translateY(2px);
+}
+
+/* 커스텀 스크롤바 */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
